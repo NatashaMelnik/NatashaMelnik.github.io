@@ -12,6 +12,11 @@
     <title>Oracle</title>
   </head>
   <body>
+    <!-- menu nav -->
+    <picture class="menu-button" id="menu-button">
+      <img src="./images/menu-4.png" alt="Strength" onclick="openNav()"/>
+    </picture>
+    <!-- menu nav -->
     <div class="up-button">
       <picture class="up-button-image">
         <a href="#narif">
@@ -55,12 +60,10 @@
         </a>
       </picture>
     </div>
-    <!-- footer button -->
-    <!-- <div class="up-button">
-      <h2>footer-links</h2>
-    </div> -->
     <header>
       <div class="header-block">
+        <div>
+        </div>
         <div class="header-line"></div>
         <div class="quoter-line"></div>
         <h1 class="hero-name">~ Oracle ~</h1>
@@ -549,44 +552,62 @@
               >
             </p>
             <p>
-              <a href="https://www.dotabuff.com/heroes/oracle/guides" target="_blank"
+              <a
+                href="https://www.dotabuff.com/heroes/oracle/guides"
+                target="_blank"
                 >Dotabuff Guides</a
               >
             </p>
             <p>
-              <a href="https://www.dotabuff.com/heroes/oracle/items" target="_blank"
+              <a
+                href="https://www.dotabuff.com/heroes/oracle/items"
+                target="_blank"
                 >Dotabuff Items</a
               >
             </p>
           </div>
           <div class="footter-column">
             <p>
-              <a href="https://www.dotabuff.com/heroes/oracle/builds" target="_blank"
+              <a
+                href="https://www.dotabuff.com/heroes/oracle/builds"
+                target="_blank"
                 >Ability Builds</a
               >
             </p>
             <p>
-              <a href="https://www.dotabuff.com/heroes/oracle/trends" target="_blank"
+              <a
+                href="https://www.dotabuff.com/heroes/oracle/trends"
+                target="_blank"
                 >Week Trends</a
               >
             </p>
             <p>
-              <a href="https://www.dotabuff.com/heroes/oracle/players" target="_blank"
+              <a
+                href="https://www.dotabuff.com/heroes/oracle/players"
+                target="_blank"
                 >Rankings</a
               >
             </p>
           </div>
           <div class="footter-column">
             <p>
-              <a href="https://www.dotabuff.com/heroes/oracle/" target="_blank">Wiki Fandom</a>
+              <a href="https://www.dotabuff.com/heroes/oracle/" target="_blank"
+                >Wiki Fandom</a
+              >
             </p>
             <p>
-              <a href="https://dota2.fandom.com/wiki/Oracle/Responses" target="_blank"
+              <a
+                href="https://dota2.fandom.com/wiki/Oracle/Responses"
+                target="_blank"
                 >Responses</a
               >
             </p>
             <p>
-              <a href="https://dota2.fandom.com/wiki/Oracle/Lore" target="_blank">Hero Lore</a>
+              <a
+                href="https://dota2.fandom.com/wiki/Oracle/Lore"
+                target="_blank"
+                >Hero Lore</a
+              >
             </p>
           </div>
         </div>
@@ -595,5 +616,22 @@
         </div>
       </div>
     </footer>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("menu-button").style.display = "none";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("menu-button").style.display = "block";
+      }
+    </script>
   </body>
 </html>

@@ -8,6 +8,18 @@ body {
     overflow-y: scroll;
 }
 
+.menu-button{
+    position: fixed;
+    z-index: 100;
+    margin-top: 36px;
+    margin-left: 38px;
+    -webkit-transform: scale(2);
+    -ms-ransform: scale(2);
+    transform: scale(1.11);
+    transition: 3s ease-in-out;
+    cursor: pointer;
+}
+
 .up-button {
     display: block;
     width: 80px;
@@ -15,7 +27,7 @@ body {
     position: fixed;
     right: 0;
     top: 200px;
-    z-index: 99999;
+    z-index: 100;
 }
 
 .up-button-image {
@@ -343,4 +355,40 @@ a, p {
     margin-top: 40px;
     margin-right: 24px;
     font-size: 12px;
+}
+
+/* side nav main menu button */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
