@@ -3,10 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/Oracle_minimap_icon.png"
+      type="image/png"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Oracle</title>
   </head>
   <body>
+    <div class="up-button">
+      <picture class="up-button-image">
+        <a href="#narif">
+          <img src="./images/Oracle_minimap_icon.png" alt="narif" />
+        </a>
+      </picture>
+      <picture>
+        <a href="#fortune's_end">
+          <img
+            class="up-button-image"
+            src="./images/fortune's_end.jpg"
+            alt="Fortune's End"
+          />
+        </a>
+      </picture>
+      <picture>
+        <a href="#fates_edict">
+          <img
+            class="up-button-image"
+            src="./images/fate's_edict.jpg"
+            alt="Fate's Edict"
+          />
+        </a>
+      </picture>
+      <picture>
+        <a href="#purifying_Flames">
+          <img
+            class="up-button-image"
+            src="./images/Purifying_Flames.jpg"
+            alt="Purifying Flames"
+          />
+        </a>
+      </picture>
+      <picture>
+        <a href="#false_promise">
+          <img
+            class="up-button-image"
+            src="./images/false_promise.jpg"
+            alt="False Promise"
+          />
+        </a>
+      </picture>
+    </div>
+    <!-- footer button -->
+    <!-- <div class="up-button">
+      <h2>footer-links</h2>
+    </div> -->
     <header>
       <div class="header-block">
         <div class="header-line"></div>
@@ -19,7 +71,7 @@
         <div class="header-line"></div>
       </div>
     </header>
-    <div class="main-body">
+    <div class="main-body" id="narif">
       <div class="atribute-pointers">
         <ul class="atribute-pointers-list">
           <li>
@@ -169,318 +221,379 @@
             <td>163-169</td>
           </tr>
         </table>
-
       </div>
     </div>
     <div>
       <div class="stats-table">
-          <div class="single-state">
-            <div class="single-state-header">
+        <div class="single-state">
+          <div class="single-state-header">
             <div class="state-picture" id="fortune's_end">
-              <picture >
+              <picture>
                 <a href="#fortune's_end">
-                  <img class="state-picture-img"
+                  <img
+                    class="state-picture-img"
                     src="./images/fortune's_end.jpg"
                     alt="Fortune's End"
                   />
                 </a>
-                </picture>
+              </picture>
             </div>
             <div class="state-name">
               <h2>Fortune's End ~</h2>
+            </div>
           </div>
-          </div>
-              <div class="state-body">
-                  <div class="state-description">
-                    <p class="state-description">CHANNELED - Gathers Oracle's power into a bolt of scouring energy that, when released, damages, roots, and purges enemies of buffs in an area around the target. If target is an ally it will only purge debuffs. The root duration is equal to the time spent channeling.</p>
-                  </div>
-                  <div class="quoter-line"></div>
-                  <div class="state-table-cast">
-                      <ul class="state-table-cast-ul">
-                        <li><b>Ability:	&nbsp;</b>Target Unit / Channeled</li>
-                        <li><b>Affects:	&nbsp;</b>Enemies / Allies</li>
-                        <li><b>Damage:	&nbsp;</b>Magical</li>
-                      </ul>
-                  </div>
-                  <div class="stats-time-res">
-                    <ul>
-                      <li><b>Cast Animation:&nbsp;</b>0+0</li>
-                      <li><b>Cast Range:&nbsp;</b>850</li>
-                      <li><b>Effect Radius:&nbsp;</b>300</li>
-                      <li><b>Max Channel Time:&nbsp;</b>2.5</li>
-                      <li><b>Damage:&nbsp;</b>100/160/220/280</li>
-                      <li><b>Min Root Duration:&nbsp;</b>0.50</li>
-                      <li><b>Max Root Duration:&nbsp;</b>2.5</li>
-                    </ul>
-                  </div>
-                  <div class="stats-props">
-                    <div class="stats-line">
-                      <div class="cooldown">
-                        ​<picture>
-                          <img
-                            src="./images/Cooldown_symbol.png"
-                            alt="time"
-                          />
-                        </picture>
-                        15/12/9/6
-                      </div>
-                      <div class="mana-cost">
-                        <picture>
-                          <img
-                            src="./images/Mana_symbol.png"
-                            alt="mana"
-                          />
-                        </picture>
-                        100
-                      </div>
-                    </div>
-                    <div class="bkb">
-                      <picture>
-                        <img
-                          src="./images/Spell_immunity_block_partial_symbol.png"
-                          alt="bkb"
-                        />
-                      </picture>
-                      Can target spell immune allies. Cannot target spell immune enemies. Applies area effect when connecting with spell immune enemy. Does not root, dispel, or attempt to damage spell immune enemies. Root persists if debuff was placed before spell immunity and when not dispelled.
-                    </div>
-                    <div class="linka">
-                      <picture>
-                        <img
-                          src="./images/Spell_block_partial_symbol.png"
-                          alt="link"
-                        />
-                      </picture>
-                      Blocked fully only when primary target. Blocked upon impact.
-                    </div>
-                  </div>
+          <div class="state-body">
+            <div class="state-description">
+              <p class="state-description">
+                CHANNELED - Gathers Oracle's power into a bolt of scouring
+                energy that, when released, damages, roots, and purges enemies
+                of buffs in an area around the target. If target is an ally it
+                will only purge debuffs. The root duration is equal to the time
+                spent channeling.
+              </p>
+            </div>
+            <div class="quoter-line"></div>
+            <div class="state-table-cast">
+              <ul class="state-table-cast-ul">
+                <li><b>Ability: &nbsp;</b>Target Unit / Channeled</li>
+                <li><b>Affects: &nbsp;</b>Enemies / Allies</li>
+                <li><b>Damage: &nbsp;</b>Magical</li>
+              </ul>
+            </div>
+            <div class="stats-time-res">
+              <ul>
+                <li><b>Cast Animation:&nbsp;</b>0+0</li>
+                <li><b>Cast Range:&nbsp;</b>850</li>
+                <li><b>Effect Radius:&nbsp;</b>300</li>
+                <li><b>Max Channel Time:&nbsp;</b>2.5</li>
+                <li><b>Damage:&nbsp;</b>100/160/220/280</li>
+                <li><b>Min Root Duration:&nbsp;</b>0.50</li>
+                <li><b>Max Root Duration:&nbsp;</b>2.5</li>
+              </ul>
+            </div>
+            <div class="stats-props">
+              <div class="stats-line">
+                <div class="cooldown">
+                  ​<picture>
+                    <img src="./images/Cooldown_symbol.png" alt="time" />
+                  </picture>
+                  15/12/9/6
+                </div>
+                <div class="mana-cost">
+                  <picture>
+                    <img src="./images/Mana_symbol.png" alt="mana" />
+                  </picture>
+                  100
+                </div>
               </div>
+              <div class="bkb">
+                <picture>
+                  <img
+                    src="./images/Spell_immunity_block_partial_symbol.png"
+                    alt="bkb"
+                  />
+                </picture>
+                Can target spell immune allies. Cannot target spell immune
+                enemies. Applies area effect when connecting with spell immune
+                enemy. Does not root, dispel, or attempt to damage spell immune
+                enemies. Root persists if debuff was placed before spell
+                immunity and when not dispelled.
+              </div>
+              <div class="linka">
+                <picture>
+                  <img
+                    src="./images/Spell_block_partial_symbol.png"
+                    alt="link"
+                  />
+                </picture>
+                Blocked fully only when primary target. Blocked upon impact.
+              </div>
+            </div>
           </div>
-          <!--  -->
+        </div>
+        <!--  -->
         <div class="single-state">
           <!-- <div class="quoter-line"></div> -->
-            <div class="single-state-header">
+          <div class="single-state-header">
             <div class="state-picture" id="fates_edict">
-              <picture >
+              <picture>
                 <a href="#fates_edict">
-                  <img class="state-picture-img"
+                  <img
+                    class="state-picture-img"
                     src="./images/fate's_edict.jpg"
                     alt="Fate's Edict"
                   />
                 </a>
-                </picture>
+              </picture>
             </div>
             <div class="state-name">
               <h2>Fate's Edict ~</h2>
-          </div>
-          </div>
-              <div class="state-body">
-                  <div class="state-description">
-                    <p class="state-description">Oracle enraptures a target, disarming them and granting them 100% magic damage resistance. Can be cast on allies and enemies.</p>
-                  </div>
-                  <div class="quoter-line"></div>
-                  <div class="state-table-cast">
-                      <ul class="state-table-cast-ul">
-                        <li><b>Ability:	&nbsp;</b>Target Unit</li>
-                        <li><b>Affects:	&nbsp;</b>Enemies / Allies</li>
-                      </ul>
-                  </div>
-                  <div class="stats-time-res">
-                    <ul>
-                      <li><b>Cast Animation:&nbsp;</b>0.3+1.1</li>
-                      <li><b>Cast Range:&nbsp;</b>500/600/700/800</li>
-                      <li><b>Effect Radius Resistance:&nbsp;</b>100%</li>
-                      <li><b>Ally Magic Resistance:&nbsp;</b>100%</li>
-                      <li><b>Duration:&nbsp;</b>3/3.5/4/4.5</li>
-                    </ul>
-                  </div>
-                  <div class="stats-props">
-                    <div class="stats-line">
-                      <div class="cooldown">
-                        ​<picture>
-                          <img
-                            src="./images/Cooldown_symbol.png"
-                            alt="time"
-                          />
-                        </picture>
-                        16/13/10/7
-                      </div>
-                      <div class="mana-cost">
-                        <picture>
-                          <img
-                            src="./images/Mana_symbol.png"
-                            alt="mana"
-                          />
-                        </picture>
-                        50
-                      </div>
-                    </div>
-                    <div class="bkb">
-                      <picture>
-                        <img
-                          src="./images/Spell_immunity_block_partial_symbol.png"
-                          alt="bkb"
-                        />
-                      </picture>
-                      Fate's Edict's modifier is always dispelled by spell immunity.
-                    </div>
-                    <div class="linka">
-                      <picture>
-                        <img
-                          src="./images/Spell_block_partial_symbol.png"
-                          alt="link"
-                        />
-                      </picture>
-                      Fate's Edict no longer causes allies to be disarmed or enemies immune to magic damage.
-                    </div>
-                  </div>
-              </div>
-          </div>
-          <!--  -->
-            <!--  -->
-            <div class="single-state">
-              <div class="single-state-header">
-              <div class="state-picture" id="purifying_Flames">
-                <picture >
-                  <a href="#purifying_Flames">
-                    <img class="state-picture-img"
-                      src="./images/Purifying_Flames.jpg"
-                      alt="Purifying Flames"
-                    />
-                  </a>
-                </picture>
-              </div>
-              <div class="state-name">
-                <h2>Purifying Flames ~</h2>
             </div>
+          </div>
+          <div class="state-body">
+            <div class="state-description">
+              <p class="state-description">
+                Oracle enraptures a target, disarming them and granting them
+                100% magic damage resistance. Can be cast on allies and enemies.
+              </p>
             </div>
-                <div class="state-body">
-                    <div class="state-description">
-                      <p class="state-description">Burns away impurities, dealing heavy magic damage to the target before causing them to regenerate health over time. The amount of health regenerated over its duration exceeds the amount of initial damage. Can be cast on enemies and allies.</p>
-                    </div>
-                    <div class="quoter-line"></div>
-                    <div class="state-table-cast">
-                        <ul class="state-table-cast-ul">
-                          <li><b>Ability:	&nbsp;</b>Target Unit</li>
-                          <li><b>Affects:	&nbsp;</b>Enemies / Allies</li>
-                          <li><b>Damage:	&nbsp;</b>Magical</li>
-                        </ul>
-                    </div>
-                    <div class="stats-time-res">
-                      <ul>
-                        <li><b>Cast Animation:&nbsp;</b>0.15+1.14</li>
-                        <li><b>Cast Range:&nbsp;</b>850</li>
-                        <li><b>Effect Radius:&nbsp;</b>90/180/270/360</li>
-                        <li><b>Ally Damage:&nbsp;</b>90/180/270/360</li>
-                        <li><b>Damage:&nbsp;</b>100/160/220/280</li>
-                        <li><b>Heal per Second:&nbsp;</b>11/22/33/44</li>
-                        <li><b>Duration:&nbsp;</b>9</li>
-                      </ul>
-                    </div>
-                    <div class="stats-props">
-                      <div class="stats-line">
-                        <div class="cooldown">
-                          ​<picture>
-                            <img
-                              src="./images/Cooldown_symbol.png"
-                              alt="time"
-                            />
-                          </picture>
-                          2.5
-                        </div>
-                        <div class="mana-cost">
-                          <picture>
-                            <img
-                              src="./images/Mana_symbol.png"
-                              alt="mana"
-                            />
-                          </picture>
-                          80/85/90/95
-                        </div>
-                      </div>
-                      <div class="bkb">
-                        <picture>
-                          <img
-                            src="./images/Spell_immunity_block_partial_symbol.png"
-                            alt="bkb"
-                          />
-                        </picture>
-                        Heal persists if buff was placed before spell immunity and when not dispelled.
-                      </div>
-                    </div>
-                </div>
+            <div class="quoter-line"></div>
+            <div class="state-table-cast">
+              <ul class="state-table-cast-ul">
+                <li><b>Ability: &nbsp;</b>Target Unit</li>
+                <li><b>Affects: &nbsp;</b>Enemies / Allies</li>
+              </ul>
             </div>
-            <!--  -->
-            <div class="single-state">
-              <!-- <div class="quoter-line"></div> -->
-                <div class="single-state-header">
-                <div class="state-picture" id="false_promise">
-                  <picture >
-                    <a href="#false_promise">
-                      <img class="state-picture-img"
-                      src="./images/false_promise.jpg"
-                      alt="False Promise"
-                    />
-                    </a>
+            <div class="stats-time-res">
+              <ul>
+                <li><b>Cast Animation:&nbsp;</b>0.3+1.1</li>
+                <li><b>Cast Range:&nbsp;</b>500/600/700/800</li>
+                <li><b>Effect Radius Resistance:&nbsp;</b>100%</li>
+                <li><b>Ally Magic Resistance:&nbsp;</b>100%</li>
+                <li><b>Duration:&nbsp;</b>3/3.5/4/4.5</li>
+              </ul>
+            </div>
+            <div class="stats-props">
+              <div class="stats-line">
+                <div class="cooldown">
+                  ​<picture>
+                    <img src="./images/Cooldown_symbol.png" alt="time" />
                   </picture>
+                  16/13/10/7
                 </div>
-                <div class="state-name">
-                  <h2>False Promise ~</h2>
+                <div class="mana-cost">
+                  <picture>
+                    <img src="./images/Mana_symbol.png" alt="mana" />
+                  </picture>
+                  50
+                </div>
               </div>
+              <div class="bkb">
+                <picture>
+                  <img
+                    src="./images/Spell_immunity_block_partial_symbol.png"
+                    alt="bkb"
+                  />
+                </picture>
+                Fate's Edict's modifier is always dispelled by spell immunity.
               </div>
-                  <div class="state-body">
-                      <div class="state-description">
-                        <p class="state-description">Temporarily alters an ally's destiny, delaying any healing or damage taken until False Promise ends. Any healing that is delayed by False Promise is doubled. Removes most negative status effects and disables on initial cast.</p>
-                      </div>
-                      <div class="quoter-line"></div>
-                      <div class="state-table-cast">
-                          <ul class="state-table-cast-ul">
-                            <li><b>Ability:	&nbsp;</b>Target Unit</li>
-                            <li><b>Affects:	&nbsp;</b>Allied Heroes</li>
-                            <li><b>Damage:	&nbsp;</b>Pure (HP Removal)</li>
-                          </ul>
-                      </div>
-                      <div class="stats-time-res">
-                        <ul>
-                          <li><b>Cast Animation:&nbsp;</b> 0.3+0.97</li>
-                          <li><b>Cast Range:&nbsp;</b>700/850/1000</li>
-                          <li><b>Delayed Heal Amplification:&nbsp;</b> 100% </li>
-                          <li><b>Duration:&nbsp;</b>8/9/10</li>
-                        </ul>
-                      </div>
-                      <div class="stats-props">
-                        <div class="stats-line">
-                          <div class="cooldown">
-                            ​<picture>
-                              <img
-                                src="./images/Cooldown_symbol.png"
-                                alt="time"
-                              />
-                            </picture>
-                            120/90/60
-                          </div>
-                          <div class="mana-cost">
-                            <picture>
-                              <img
-                                src="./images/Mana_symbol.png"
-                                alt="mana"
-                              />
-                            </picture>
-                            100/150/200
-                          </div>
-                        </div>
-                        <div class="bkb">
-                          <picture>
-                            <img
-                              src="./images/Spell_immunity_block_partial_symbol.png"
-                              alt="bkb"
-                            />
-                          </picture>
-                          Causes False Promise to have a 0.15-second fade delay invisibility.                    
-                        </div>
-                      </div>
-                  </div>
+              <div class="linka">
+                <picture>
+                  <img
+                    src="./images/Spell_block_partial_symbol.png"
+                    alt="link"
+                  />
+                </picture>
+                Fate's Edict no longer causes allies to be disarmed or enemies
+                immune to magic damage.
               </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="single-state">
+          <div class="single-state-header">
+            <div class="state-picture" id="purifying_Flames">
+              <picture>
+                <a href="#purifying_Flames">
+                  <img
+                    class="state-picture-img"
+                    src="./images/Purifying_Flames.jpg"
+                    alt="Purifying Flames"
+                  />
+                </a>
+              </picture>
+            </div>
+            <div class="state-name">
+              <h2>Purifying Flames ~</h2>
+            </div>
+          </div>
+          <div class="state-body">
+            <div class="state-description">
+              <p class="state-description">
+                Burns away impurities, dealing heavy magic damage to the target
+                before causing them to regenerate health over time. The amount
+                of health regenerated over its duration exceeds the amount of
+                initial damage. Can be cast on enemies and allies.
+              </p>
+            </div>
+            <div class="quoter-line"></div>
+            <div class="state-table-cast">
+              <ul class="state-table-cast-ul">
+                <li><b>Ability: &nbsp;</b>Target Unit</li>
+                <li><b>Affects: &nbsp;</b>Enemies / Allies</li>
+                <li><b>Damage: &nbsp;</b>Magical</li>
+              </ul>
+            </div>
+            <div class="stats-time-res">
+              <ul>
+                <li><b>Cast Animation:&nbsp;</b>0.15+1.14</li>
+                <li><b>Cast Range:&nbsp;</b>850</li>
+                <li><b>Effect Radius:&nbsp;</b>90/180/270/360</li>
+                <li><b>Ally Damage:&nbsp;</b>90/180/270/360</li>
+                <li><b>Damage:&nbsp;</b>100/160/220/280</li>
+                <li><b>Heal per Second:&nbsp;</b>11/22/33/44</li>
+                <li><b>Duration:&nbsp;</b>9</li>
+              </ul>
+            </div>
+            <div class="stats-props">
+              <div class="stats-line">
+                <div class="cooldown">
+                  ​<picture>
+                    <img src="./images/Cooldown_symbol.png" alt="time" />
+                  </picture>
+                  2.5
+                </div>
+                <div class="mana-cost">
+                  <picture>
+                    <img src="./images/Mana_symbol.png" alt="mana" />
+                  </picture>
+                  80/85/90/95
+                </div>
+              </div>
+              <div class="bkb">
+                <picture>
+                  <img
+                    src="./images/Spell_immunity_block_partial_symbol.png"
+                    alt="bkb"
+                  />
+                </picture>
+                Heal persists if buff was placed before spell immunity and when
+                not dispelled.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="single-state">
+          <!-- <div class="quoter-line"></div> -->
+          <div class="single-state-header">
+            <div class="state-picture" id="false_promise">
+              <picture>
+                <a href="#false_promise">
+                  <img
+                    class="state-picture-img"
+                    src="./images/false_promise.jpg"
+                    alt="False Promise"
+                  />
+                </a>
+              </picture>
+            </div>
+            <div class="state-name">
+              <h2>False Promise ~</h2>
+            </div>
+          </div>
+          <div class="state-body">
+            <div class="state-description">
+              <p class="state-description">
+                Temporarily alters an ally's destiny, delaying any healing or
+                damage taken until False Promise ends. Any healing that is
+                delayed by False Promise is doubled. Removes most negative
+                status effects and disables on initial cast.
+              </p>
+            </div>
+            <div class="quoter-line"></div>
+            <div class="state-table-cast">
+              <ul class="state-table-cast-ul">
+                <li><b>Ability: &nbsp;</b>Target Unit</li>
+                <li><b>Affects: &nbsp;</b>Allied Heroes</li>
+                <li><b>Damage: &nbsp;</b>Pure (HP Removal)</li>
+              </ul>
+            </div>
+            <div class="stats-time-res">
+              <ul>
+                <li><b>Cast Animation:&nbsp;</b> 0.3+0.97</li>
+                <li><b>Cast Range:&nbsp;</b>700/850/1000</li>
+                <li><b>Delayed Heal Amplification:&nbsp;</b> 100%</li>
+                <li><b>Duration:&nbsp;</b>8/9/10</li>
+              </ul>
+            </div>
+            <div class="stats-props">
+              <div class="stats-line">
+                <div class="cooldown">
+                  ​<picture>
+                    <img src="./images/Cooldown_symbol.png" alt="time" />
+                  </picture>
+                  120/90/60
+                </div>
+                <div class="mana-cost">
+                  <picture>
+                    <img src="./images/Mana_symbol.png" alt="mana" />
+                  </picture>
+                  100/150/200
+                </div>
+              </div>
+              <div class="bkb">
+                <picture>
+                  <img
+                    src="./images/Spell_immunity_block_partial_symbol.png"
+                    alt="bkb"
+                  />
+                </picture>
+                Causes False Promise to have a 0.15-second fade delay
+                invisibility.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+          <div class="footter-column">
+            <p>
+              <a href="https://www.dotabuff.com/heroes/oracle/" target="_blank"
+                >Dotabuff Hero</a
+              >
+            </p>
+            <p>
+              <a href="https://www.dotabuff.com/heroes/oracle/guides" target="_blank"
+                >Dotabuff Guides</a
+              >
+            </p>
+            <p>
+              <a href="https://www.dotabuff.com/heroes/oracle/items" target="_blank"
+                >Dotabuff Items</a
+              >
+            </p>
+          </div>
+          <div class="footter-column">
+            <p>
+              <a href="https://www.dotabuff.com/heroes/oracle/builds" target="_blank"
+                >Ability Builds</a
+              >
+            </p>
+            <p>
+              <a href="https://www.dotabuff.com/heroes/oracle/trends" target="_blank"
+                >Week Trends</a
+              >
+            </p>
+            <p>
+              <a href="https://www.dotabuff.com/heroes/oracle/players" target="_blank"
+                >Rankings</a
+              >
+            </p>
+          </div>
+          <div class="footter-column">
+            <p>
+              <a href="https://www.dotabuff.com/heroes/oracle/" target="_blank">Wiki Fandom</a>
+            </p>
+            <p>
+              <a href="https://dota2.fandom.com/wiki/Oracle/Responses" target="_blank"
+                >Responses</a
+              >
+            </p>
+            <p>
+              <a href="https://dota2.fandom.com/wiki/Oracle/Lore" target="_blank">Hero Lore</a>
+            </p>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Copycat © 2021 InterLink inCamp</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
