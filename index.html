@@ -14,7 +14,7 @@
   <body>
     <!-- menu nav -->
     <picture class="menu-button" id="menu-button">
-      <img src="./images/menu-4.png" alt="Strength" onclick="openNav()"/>
+      <img src="./images/menu-4.png" alt="Strength" onclick="openNav()" />
     </picture>
     <!-- menu nav -->
     <div class="up-button">
@@ -62,8 +62,7 @@
     </div>
     <header>
       <div class="header-block">
-        <div>
-        </div>
+        <div></div>
         <div class="header-line"></div>
         <div class="quoter-line"></div>
         <h1 class="hero-name">~ Oracle ~</h1>
@@ -140,14 +139,14 @@
             plan.
           </p>
           <!-- <p class="biography-text">
-            The immediate effect on both parties was insanity. Unable to
-            comprehend the state of being both triumphant and defeated, the
-            Graven King's mind dispersed into motes of madness. The naive Satrap
-            fared no better. The opposing paired realities continued to split
-            and split again, echoing into infinite histories, all of them
-            populated by a bewildered populace that soon lost the ability to
-            feed, clothe, defend, or reproduce itself in the traditional manner.
-          </p> -->
+        The immediate effect on both parties was insanity. Unable to
+        comprehend the state of being both triumphant and defeated, the
+        Graven King's mind dispersed into motes of madness. The naive Satrap
+        fared no better. The opposing paired realities continued to split
+        and split again, echoing into infinite histories, all of them
+        populated by a bewildered populace that soon lost the ability to
+        feed, clothe, defend, or reproduce itself in the traditional manner.
+      </p> -->
           <p class="biography-text">
             Long before the repercussions had played out, however, Cymurri's
             wary Advisors had seized Nerif, bound and gagged him, and launched
@@ -618,18 +617,47 @@
     </footer>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
+      <a href="https://www.dotabuff.com/heroes/oracle/" target="_blank"
+        >Dotabuff Hero</a
+      >
+      <a href="https://www.dotabuff.com/heroes/oracle/guides" target="_blank"
+        >Dotabuff Guides</a
+      >
+      <a href="https://www.dotabuff.com/heroes/oracle/items" target="_blank"
+        >Dotabuff Items</a
+      >
+      <a href="https://www.dotabuff.com/heroes/oracle/builds" target="_blank"
+        >Ability Builds</a
+      >
+      <a href="https://www.dotabuff.com/heroes/oracle/trends" target="_blank"
+        >Week Trends</a
+      >
+      <a href="https://www.dotabuff.com/heroes/oracle/players" target="_blank"
+        >Rankings</a
+      >
+      <a href="https://www.dotabuff.com/heroes/oracle/" target="_blank"
+        >Wiki Fandom</a
+      >
+      <a href="https://dota2.fandom.com/wiki/Oracle/Responses" target="_blank"
+        >Responses</a
+      >
+      <a href="https://dota2.fandom.com/wiki/Oracle/Lore" target="_blank"
+        >Hero Lore</a
+      >
     </div>
     <script>
       function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
         document.getElementById("menu-button").style.display = "none";
+        // document.body.style.filter = "brightness(40%)";
+        // document.getElementById("mySidenav").style.filter = "brightness(100%)";
       }
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
+        // document.body.style.filter = "brightness(100%)";
+        setTimeout(showMenu, 800);
+      }
+      function showMenu() {
         document.getElementById("menu-button").style.display = "block";
       }
     </script>

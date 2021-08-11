@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
-html {
+html, body {
     scroll-behavior: smooth;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
 }
 
 body {
@@ -18,6 +20,7 @@ body {
     transform: scale(1.11);
     transition: 3s ease-in-out;
     cursor: pointer;
+    position: fixed;
 }
 
 .up-button {
@@ -361,12 +364,14 @@ a, p {
 
 .sidenav {
     height: 100%;
+    border-right: 1px solid whitesmoke;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 900;
     top: 0;
     left: 0;
     background-color: #111;
+    opacity: 0.9;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -376,13 +381,13 @@ a, p {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: whitesmoke;
     display: block;
     transition: 0.3s;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: white;
 }
 
 .sidenav .closebtn {
